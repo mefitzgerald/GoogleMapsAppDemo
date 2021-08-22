@@ -41,6 +41,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker at Latrobe Bundoora and move the camera
         LatLng latrobe = new LatLng(-37.721476, 145.046851);
         mMap.addMarker(new MarkerOptions().position(latrobe).title("Marker at Latrobe"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latrobe));
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(latrobe));
+        float zoomLevel = 17.0f; //This goes up to 21
+        //make camera start zoomed in to marker
+        //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latrobe, zoomLevel));
+        //make camera zoom in to marker
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latrobe, zoomLevel));
     }
 }

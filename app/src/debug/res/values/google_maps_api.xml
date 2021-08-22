@@ -2,5 +2,5 @@
     <!--
 Enter your api key
     -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaXXXX</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDBbgly18p3WueSSzOX20iUnpqolSNrGes</string>
 </resources>
